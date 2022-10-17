@@ -1,6 +1,5 @@
 .comments {
     display: grid;
-    grid-template-rows: repeat(1fr);
     padding: 10px;
 }
 
@@ -39,7 +38,7 @@
 }
 
 .vote-box button:active {
-    color: hsl(212, 24%, 26%);
+    color: hsla(238, 40%, 52%, 0.5);
 }
 
 .commenthead {
@@ -59,8 +58,15 @@
     color: hsla(238, 40%, 52%, 0.2);
 }
 
+.commenthead button:active {
+    color: hsl(238, 40%, 52%);
+}
+
 body {
-    background-color: hsl(223, 19%, 93%)
+    background-color: hsl(223, 19%, 93%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 button {
